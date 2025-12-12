@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agriculture Login</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=60") 
+                    no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        animation: fadeBg 2.5s ease-in;
+    }
+
+    @keyframes fadeBg {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .login-container {
+        background: rgba(255, 255, 255, 0.85);
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        width: 320px;
+        backdrop-filter: blur(4px);
+        animation: floatBox 3.5s ease-in-out infinite;
+    }
+
+    @keyframes floatBox {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+        100% { transform: translateY(0px); }
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: green;
+        font-weight: 700;
+        animation: fadeIn 1.3s ease;
+    }
+
+    .input-box {
+        margin-bottom: 15px;
+        animation: fadeIn 1.6s ease;
+    }
+
+    .input-box label {
+        font-size: 14px;
+        color: #2d5c1c;
+        font-weight: bold;
+    }
+
+    .input-box input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #7aa865;
+        border-radius: 6px;
+        outline: none;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .input-box input:focus {
+        border-color: #4a7c2f;
+        box-shadow: 0 0 10px rgba(74,124,47,0.4);
+        transform: scale(1.02);
+    }
+
+    .btn {
+        width: 100%;
+        background: #4a7c2f;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #3b6626;
+        transform: translateY(-3px);
+    }
+
+    .footer-text {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 15px;
+        color: #2d5c1c;
+    }
+
+    .link-page {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .link-page a {
+        color: #2d5c1c;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .link-page a:hover {
+        color: green;
+        text-decoration: underline;
+    }
+</style>
+
+</head>
+<body>
+  
+<div class="login-container">
+    <h2>Login</h2>
+
+    <form action="9thpage.html">
+        <div class="input-box">
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username" required>
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <p class="footer-text">Grow with technology</p>
+
+
+        
+        </div>
+    </form>
+    
+</div>
+
+</body>
+</html>
